@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0"
+    <div class="col-xl-8 col-lg-7"><img class="masthead"
             src=" {{ asset('/import/assets/pic/img/snow.jpg') }}" alt="..." /></div>
     <div class="container">
         <div class="row justify-content-center">
