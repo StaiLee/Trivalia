@@ -1,9 +1,10 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\ProfileController;
 use Inertia\Inertia;
 
 /*
@@ -17,6 +18,14 @@ use Inertia\Inertia;
 |
 */
 
+Route::get('/', [PostController::class, 'index'])->name('posts.index');
+Route::get('/posts/create', [PostController::class, 'create'])->name('posts.create');
+Route::post('/posts', [PostController::class, 'store'])->name('posts.store');
+Route::get('/posts/{post}', [PostController::class, 'show'])->name('posts.show');
+Route::get('/posts/{post}/edit', [PostController::class, 'edit'])->name('posts.edit');
+Route::put('/posts/{post}', [PostController::class, 'update'])->name('posts.update');
+Route::delete('/posts/{post}', [PostController::class, 'destroy'])->name('posts.destroy');
+
 Route::get('/laravel', function () {
     return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),
@@ -26,8 +35,12 @@ Route::get('/laravel', function () {
     ]);
 });
 
+<<<<<<< HEAD
 // Homepage
 Route::get('/', function () {
+=======
+Route::get('/home', function () {
+>>>>>>> 3563fff (CRUD working)
     return view('homepage');
 });
 
@@ -61,7 +74,6 @@ Route::post('/checkout', function (Request $request) {
     // Display a success message to the user.
     return 'Payment successful!';
 });
-
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
