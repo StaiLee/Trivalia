@@ -35,13 +35,9 @@ Route::get('/laravel', function () {
     ]);
 });
 
-<<<<<<< HEAD
 // Homepage
-Route::get('/', function () {
-=======
 Route::get('/home', function () {
->>>>>>> 3563fff (CRUD working)
-    return view('homepage');
+    return view('home');
 });
 
 // Checkout
@@ -86,3 +82,4 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
