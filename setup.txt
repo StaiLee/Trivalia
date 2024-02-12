@@ -1,0 +1,8 @@
+composer install
+npm update
+npm run build
+.env.example copie du fichier + rename .env
+php artisan key:generate
+changer le nom de DB_DATABASE= en DB_DATABASE=trivaliadb
+php artisan migrate
+enfin run avec php artisan migrate
