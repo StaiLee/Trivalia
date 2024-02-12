@@ -26,7 +26,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url('/contact') }}">Contact</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ url('/about') }}">About</a></li>
                         
                     </ul>
