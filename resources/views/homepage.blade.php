@@ -28,6 +28,7 @@
                         <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ url('/contact') }}">Contact</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ url('/about') }}">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url('/cart') }}">Cart</a></li>
                         
                     </ul>
                 </div>
