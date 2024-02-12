@@ -35,6 +35,11 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
+// Subscribe
+Route::get('/subscribe', function () {
+    return view('subscribe');
+});
+
 // Cart
 Route::get('/cart', function () {
     return view('cart');
@@ -56,4 +61,4 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
