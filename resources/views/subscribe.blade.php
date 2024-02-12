@@ -9,7 +9,7 @@
     <link href="{{ asset('/import/assets/css/styles.css') }}" rel="stylesheet"/>
     <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
-    <title>Pricing example for Bootstrap</title>
+    <title>Subscribe</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/pricing/">
 
