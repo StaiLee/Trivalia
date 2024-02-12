@@ -37,7 +37,7 @@ Route::get('/laravel', function () {
 
 // Homepage
 Route::get('/home', function () {
-    return view('home');
+    return view('homepage');
 });
 
 // Checkout
