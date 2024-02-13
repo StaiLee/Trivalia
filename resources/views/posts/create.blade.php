@@ -1,4 +1,3 @@
-// same as the previous file. Add the following after the nav tag and before the closing body tag.
 <div class="container h-100 mt-5">
   <div class="row h-100 justify-content-center align-items-center">
     <div class="col-10 col-md-8 col-lg-6">
