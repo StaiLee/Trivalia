@@ -87,5 +87,22 @@ class ProductController extends Controller
 
         return redirect()->route('products.index')->with('success', 'Product deleted successfully.');
     }
+
+
+    // TODO - Fonction pour récupérer le prix d'un produit
+    public function showPrice($id)
+    {
+        $product = Product::findOrFail($id);
+        $price = $product->price; // Récupère le prix du produit
+        return $price;
+    }
+
+    // TODO - Fonction pour récupérer le nom d'un produit
+    public function showName($id)
+    {
+        $product = Product::findOrFail($id);
+        $name = $product->price; // Récupère le prix du produit
+        return $name;
+    }
 }
 

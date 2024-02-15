@@ -41,9 +41,9 @@ Route::get('/home', function () {
 });
 
 Route::controller(StripePaymentController::class)->group(function(){
-    Route::get('stripe', 'stripe')->name('stripe.index');
-    Route::get('stripe/checkout', 'stripeCheckout')->name('stripe.checkout');
-    Route::get('stripe/checkout/success', 'stripeCheckoutSuccess')->name('stripe.checkout.success');
+    Route::get('/stripe/{product}', 'stripe')->name('stripe.index');
+    Route::get('/stripe/{product}/checkout', 'stripeCheckout')->name('stripe.checkout');
+    Route::get('/stripe/{product}/checkout/success', 'stripeCheckoutSuccess')->name('stripe.checkout.success');
 });
 
 
