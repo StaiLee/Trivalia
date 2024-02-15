@@ -53,6 +53,8 @@ Route::get('/home', function () {
 });
 
 
+
+
 // Stripe Payment
 Route::controller(StripePaymentController::class)->group(function(){
     Route::get('/stripe/{product}', 'stripe')->name('stripe.index');
