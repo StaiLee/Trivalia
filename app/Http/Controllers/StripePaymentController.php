@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Stripe;
 use Illuminate\View\View;
+use App\Models\Product;
        
 class StripePaymentController extends Controller
 {
@@ -13,9 +14,10 @@ class StripePaymentController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function stripe(): View
+    public function stripe($productId): View
     {
-        return view('stripe');
+        $product = Product::findOrFail($productId); // Assure-toi d'importer le modèle Product
+        return view('stripe', compact('product'));
     }
   
     /**

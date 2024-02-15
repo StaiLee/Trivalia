@@ -26,27 +26,7 @@
               <div class="card-body">
                 <h5 class="card-title">Silver</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="{{ route('stripe.checkout', ['price' => 10, 'product' => 'Silver']) }}" class="btn btn-primary">Pay $10</a>
-              </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
-              <img src="https://dummyimage.com/300x200/000/fff" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Gold</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="{{ route('stripe.checkout', ['price' => 100, 'product' => 'Gold']) }}" class="btn btn-primary">Pay $100</a>
-              </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
-              <img src="https://dummyimage.com/300x200/000/fff" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Platinum</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="{{ route('stripe.checkout', ['price' => 1000, 'product' => 'Platinum']) }}" class="btn btn-primary">Pay $1000</a>
+                <a href="{{ route('stripe.checkout', ['price' => $product->price , 'product' => $product->id]) }}" class="btn btn-primary">${{ $product->price }}</a>
               </div>
             </div>
         </div>
