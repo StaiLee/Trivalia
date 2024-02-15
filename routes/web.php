@@ -1,10 +1,10 @@
 <?php
 
 use Illuminate\Foundation\Application;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\StripePaymentController;
 use Inertia\Inertia;
 
 /*
@@ -45,31 +45,12 @@ Route::get('/checkout', function () {
     return view('checkout');
 });
 
-Route::post('/checkout', function (Request $request) {
-    // Set your Stripe API key.
-    \Stripe\Stripe::setApiKey(env('STRIPE_SECRET'));
-
-    // Get the payment amount, email address and Stripe token from the form.
-    $amount = $request->input('amount') * 100;
-    $email = $request->input('email');
-    $stripeToken = $request->input('stripeToken');
-
-    // Create a new Stripe customer.
-    $customer = \Stripe\Customer::create([
-        'email' => $email,
-        'source' => $stripeToken,
-    ]);
-
-    // Create a new Stripe charge.
-    $charge = \Stripe\Charge::create([
-        'customer' => $customer->id,
-        'amount' => $amount,
-        'currency' => 'usd',
-    ]);
-
-    // Display a success message to the user.
-    return 'Payment successful!';
+Route::controller(StripePaymentController::class)->group(function(){
+    Route::get('stripe', 'stripe')->name('stripe.index');
+    Route::get('stripe/checkout', 'stripeCheckout')->name('stripe.checkout');
+    Route::get('stripe/checkout/success', 'stripeCheckoutSuccess')->name('stripe.checkout.success');
 });
+
 
 
 Route::get('/dashboard', function () {
