@@ -25,7 +25,7 @@ class StripePaymentController extends Controller
      */
     public function stripeCheckout(Request $request, $product)
     {
-        // $controller = new ProductController();
+        $controller = new ProductController();
         $stripe = new \Stripe\StripeClient(env('STRIPE_SECRET'));
   
         $redirectUrl = route('stripe.checkout.success', ['product' => $product]).'?session_id={CHECKOUT_SESSION_ID}';
@@ -36,9 +36,9 @@ class StripePaymentController extends Controller
                     [
                         'price_data'  => [
                             'product_data' => [
-                                'name' => $request->product, // $controller->showName($product)
+                                'name' => $controller->showName($product), //  $request->product
                             ],
-                        'unit_amount'  => 100 * $request->price, // $controller->showPrice($product)
+                        'unit_amount'  => 100 * $controller->showPrice($product) , //  $request->price
                             'currency'     => 'USD',
                         ],
                         'quantity'    => 1
