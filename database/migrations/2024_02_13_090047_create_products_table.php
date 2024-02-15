@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name')->default('');
             $table->string('image_url')->nullable()->default('');
             $table->decimal('price', 8, 2)->default(0);
-            $table->text('description')->nullable()->default('');
+            $table->text('description')->nullable();
             $table->timestamps();
         });
     }
