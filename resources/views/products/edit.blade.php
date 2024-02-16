@@ -15,6 +15,10 @@
           <textarea class="form-control" id="description" name="description" rows="3" required>{{ $product->description }}</textarea>
         </div>
         <div class="form-group">
+          <label for="image_url">Image URL</label>
+          <input type="text" class="form-control" id="image_url" name="image_url"
+            value="{{ $product->image_url }}" required>
+        <div class="form-group">
           <label for="price">Price</label>
           <input type="number" step="0.01" class="form-control" id="price" name="price"
             value="{{ $product->price }}" required>

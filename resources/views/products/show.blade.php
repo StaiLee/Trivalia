@@ -6,8 +6,8 @@
     <title>Détails du Produit</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    <div class="container mt-5">
+<body class="bg-dark text-white">
+    <div class="container mt-15">
         <h1>Détails du Produit</h1>
         <div class="row mt-3">
             <div class="col-md-6">
