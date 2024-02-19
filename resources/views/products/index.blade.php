@@ -7,6 +7,20 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
 integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <title>Products</title>
+  <style>
+    .card-title {
+      text-align: center;
+    }
+    .card img {
+      display: block;
+      margin: 0 auto;
+      max-width: 80%;
+      height: auto;
+    }
+    .card-text {
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-warning">
@@ -28,6 +42,7 @@ integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6
               <h5 class="card-title">{{ $product->name }}</h5>
             </div>
             <div class="card-body">
+              <img src="{{ $product->image_url }}" class="img-fluid" alt="Product Image">
               <p class="card-text">{{ $product->description }}</p>
               <p class="card-text">Price: {{ $product->price }}</p>
             </div>
