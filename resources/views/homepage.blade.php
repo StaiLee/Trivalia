@@ -28,6 +28,9 @@
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                         <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/register">register</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/login">login</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#signup">subscription</a></li>
                     </ul>
                 </div>
             </div>

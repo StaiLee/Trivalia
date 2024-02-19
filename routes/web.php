@@ -8,19 +8,20 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\StripePaymentController;
 use Inertia\Inertia;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
 |
-| Here is where you can register web routes for your application.
-| These routes are loaded by the RouteServiceProvider within a group
-| which contains the "web" middleware group. Now create something great!
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider and all of them will
+| be assigned to the "web" middleware group. Make something great!
 |
 */
 
 // Posts
-Route::get('/', [PostController::class, 'index'])->name('posts.index');
+Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
 Route::get('/posts/create', [PostController::class, 'create'])->name('posts.create');
 Route::post('/posts', [PostController::class, 'store'])->name('posts.store');
 Route::get('/posts/{post}', [PostController::class, 'show'])->name('posts.show');
@@ -37,24 +38,6 @@ Route::get('/products/{product}/edit', [ProductController::class, 'edit'])->name
 Route::put('/products/{product}', [ProductController::class, 'update'])->name('products.update');
 Route::delete('/products/{product}', [ProductController::class, 'destroy'])->name('products.destroy');
 
-
-Route::get('/laravel', function () {
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
-});
-
-// Homepage
-Route::get('/home', function () {
-    return view('homepage');
-});
-
-
-
-
 // Stripe Payment
 Route::controller(StripePaymentController::class)->group(function(){
     Route::get('/stripe/{product}', 'stripe')->name('stripe.index');
@@ -62,12 +45,18 @@ Route::controller(StripePaymentController::class)->group(function(){
     Route::get('/stripe/{product}/checkout/success', 'stripeCheckoutSuccess')->name('stripe.checkout.success');
 });
 
+Route::get('/', function () {
+    return view('homepage');
+});
 
 Route::get('/dashboard', function () {
-    return Inertia::render('Dashboard');
+    return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
- 
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route:
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+require __DIR__.'/auth.php';

@@ -1,4 +1,5 @@
 composer install
+composer require laravel/jetstream
 npm update
 npm run build
 .env.example copie du fichier + rename .env
