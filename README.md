@@ -66,13 +66,17 @@ To get started with Trivalia, follow these steps:
 7. Update the `DB_DATABASE` value in the `.env` file to your desired database name (e.g., `DB_DATABASE=trivaliadb`).
 
 8. Create a Stripe Account where you will get your `STRIPE_KEY` and `SECRET_KEY`. Update for each the value in the `.env`
+    ```env
+    STRIPE_KEY={{YOUR_STRIPE_KEY}}
+    SECRET_KEY={{YOUR_SECRET_STRIPE_KEY}}
+    ```
 
-9. Run database migrations:
+10. Run database migrations:
     ```bash
     php artisan migrate
     ```
 
-10. Finally, start the development server:
+11. Finally, start the development server:
     ```bash
     php artisan serve
     ```
