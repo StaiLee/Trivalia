@@ -40,7 +40,6 @@ Route::delete('/products/{product}', [ProductController::class, 'destroy'])->nam
 
 // Stripe Payment
 Route::controller(StripePaymentController::class)->group(function(){
-    Route::get('/stripe/{product}', 'stripe')->name('stripe.index');
     Route::get('/stripe/{product}/checkout', 'stripeCheckout')->name('stripe.checkout');
     Route::get('/stripe/{product}/checkout/success', 'stripeCheckoutSuccess')->name('stripe.checkout.success');
 });

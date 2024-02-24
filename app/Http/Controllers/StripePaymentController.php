@@ -14,11 +14,6 @@ class StripePaymentController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function stripe($productId): View
-    {
-        $product = Product::findOrFail($productId); // Assure-toi d'importer le modèle Product
-        return view('stripe', compact('product'));
-    }
   
     /**
      * Write code on Method
@@ -58,14 +53,14 @@ class StripePaymentController extends Controller
      *
      * @return response()
      */
-    public function stripeCheckoutSuccess(Request $request)
+    public function stripeCheckoutSuccess(Request $request, $product)
     {
         $stripe = new \Stripe\StripeClient(env('STRIPE_SECRET'));
   
         $session = $stripe->checkout->sessions->retrieve($request->session_id);
         info($session);
   
-        return redirect()->route('stripe.index')
+        return redirect()->route('products.show', ['product' => $product])
                          ->with('success', 'Payment successful.');
     }
 }
