@@ -65,7 +65,7 @@ To get started with Trivalia, follow these steps:
 
 7. Update the `DB_DATABASE` value in the `.env` file to your desired database name (e.g., `DB_DATABASE=trivaliadb`).
 
-8. Create a Stripe Account where you will get your `STRIPE_KEY` and `STRIPE_SECRET`. Update for each the value in the `.env`
+8. Create a Stripe Account where you will get your `STRIPE_KEY` and `STRIPE_SECRET` (Test Mode if want to test :) ). Update for each the value in the `.env`
     ```env
     STRIPE_KEY={{YOUR_STRIPE_KEY}}
     STRIPE_SECRET={{YOUR_SECRET_STRIPE_KEY}}
