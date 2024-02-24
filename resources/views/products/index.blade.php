@@ -40,7 +40,7 @@ integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6
   <div class="container mt-5">
     <div class="row">
       @foreach ($products as $product)
-        <div class="col-sm">
+        <div class="col-4 mb-3">
           <div class="card">
             <div class="card-header">
               <h5 class="card-title">{{ $product->name }}</h5>
@@ -51,12 +51,12 @@ integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6
               <p class="card-text">Price: {{ $product->price }}</p>
             </div>
             <div class="card-footer">
-              <div class="row">
-                <div class="col-sm">
+              <div class="row d-flex justify-content-around">
+                <div class="col-sm d-flex justify-content-center">
                   <a href="{{ route('products.edit', $product->id) }}"
             class="btn btn-primary btn-sm">Edit</a>
                 </div>
-                <div class="col-sm">
+                <div class="col-sm d-flex justify-content-center">
                     <form action="{{ route('products.destroy', $product->id) }}" method="post">
                       @csrf
                       @method('DELETE')

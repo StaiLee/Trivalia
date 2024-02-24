@@ -42,7 +42,7 @@
                     <div class="text-center">
                         <h1 class="mx-auto my-0 text-uppercase">Trivalia</h1>
                         <h2 class="text-white-50 mx-auto mt-2 mb-5">Discover the most beautiful landscapes.</h2>
-                        <a class="btn btn-warning" href="/products">Discover</a>
+                        <a class="btn btn-warning" href="/photos">Discover</a>
                     </div>
                 </div>
             </div>

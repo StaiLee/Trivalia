@@ -52,6 +52,10 @@ Route::get('/subscription', function () {
     return view('subscription');
 });
 
+Route::get('/photos', [ProductController::class, 'photos'])->name('photos');
+
+
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
