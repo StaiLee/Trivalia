@@ -4,5 +4,11 @@
 
 
 ## About
-"Trivalia is an e-commerce website built with Laravel. We are a team of professional photographers who travel the world to capture the most beautiful shots possible. We offer personalized photos and subscriptions to deliver an unforgettable experience!"
 
+Trivalia is an e-commerce website built with Laravel. We are a team of professional photographers who travel the world to capture the most beautiful shots possible. We offer personalized photos and subscriptions to deliver an unforgettable experience !
+
+## Features
+
+- **Personalized Photos:** Receive custom-made photographs tailored to your preferences.
+- **Subscription Plans:** Choose from a variety of subscription options for an enhanced experience.
+- **Global Photography:** Explore the world through our curated collection of high-quality images.
