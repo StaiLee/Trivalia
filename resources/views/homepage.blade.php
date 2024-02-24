@@ -6,6 +6,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Trivalia</title>
+        <link rel="icon" type="image/x-icon" href="{{ asset('/import/favicon_io/favicon.ico') }}">
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -28,9 +29,8 @@
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                         <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/register">register</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/login">login</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#signup">subscription</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/register">Register</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
                     </ul>
                 </div>
             </div>
@@ -42,7 +42,7 @@
                     <div class="text-center">
                         <h1 class="mx-auto my-0 text-uppercase">Trivalia</h1>
                         <h2 class="text-white-50 mx-auto mt-2 mb-5">Discover the most beautiful landscapes.</h2>
-                        <a class="btn btn-warning" href="#about">Discover</a>
+                        <a class="btn btn-warning" href="/products">Discover</a>
                     </div>
                 </div>
             </div>
@@ -56,6 +56,9 @@
                         <p class="text-white-50">
                             "Trivalia is a group of professional photographers offering landscape photos to take you on a journey around the world."
                         </p>
+                             <p class="text-white-50">
+                             We offer our customers the opportunity to live a unique experience, traveling around the world through our photos. With our subscriptions, the experience becomes even more intense. Accessing a library of high-quality, tailor-made photos tailored to our customers' expectations enhances the journey.
+                            </p>   
                     </div>
                 </div>
             </div>

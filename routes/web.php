@@ -49,6 +49,10 @@ Route::get('/', function () {
     return view('homepage');
 });
 
+Route::get('/subscription', function () {
+    return view('subscription');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
