@@ -75,3 +75,9 @@ To get started with Trivalia, follow these steps:
 
 You're now ready to launch the Trivalia project!
 
+## Contributors
+
+- StaiLee
+- Dre!C
+- Kaan
+
