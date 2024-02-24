@@ -21,6 +21,8 @@ Trivalia is an e-commerce website built with Laravel. We are a team of professio
 Trivalia utilizes the following technologies:
 
 - **Laravel:** A powerful PHP framework for building web applications.
+- **Stripe:** Trivalia integrates with Stripe for secure and seamless payment processing, allowing users to subscribe to premium features with ease.
+- **Vue.js:** The frontend of Trivalia utilizes Vue.js for dynamic and interactive user interfaces, enhancing the overall user experience.
 - **MySQL:** An open-source relational database management system.
 - **HTML/CSS:** Standard markup language and styling for web development.
 - **JavaScript:** Programming language for adding interactivity to web pages.
