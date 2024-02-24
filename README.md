@@ -16,7 +16,7 @@ Trivalia is an e-commerce website built with Laravel. We are a team of professio
 - **User Registration:** Easily create a new account to access exclusive features.
 
 
-# Technologies
+## Technologies
 
 Trivalia utilizes the following technologies:
 
