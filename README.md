@@ -26,3 +26,52 @@ Trivalia utilizes the following technologies:
 - **JavaScript:** Programming language for adding interactivity to web pages.
 - **Bootstrap:** Front-end framework for developing responsive and mobile-first websites.
 - **Composer:** Dependency manager for PHP, used for installing and managing packages.
+
+## Getting Started
+
+To get started with Trivalia, follow these steps:
+
+1. Install PHP dependencies:
+    ```bash
+    composer install
+    ```
+
+2. Install Laravel Jetstream:
+    ```bash
+    composer require laravel/jetstream
+    ```
+
+3. Update NPM packages:
+    ```bash
+    npm update
+    ```
+
+4. Compile assets:
+    ```bash
+    npm run build
+    ```
+
+5. Copy the `.env.example` file and rename it to `.env`:
+    ```bash
+    cp .env.example .env
+    ```
+
+6. Generate an application key:
+    ```bash
+    php artisan key:generate
+    ```
+
+7. Update the `DB_DATABASE` value in the `.env` file to your desired database name (e.g., `DB_DATABASE=trivaliadb`).
+
+8. Run database migrations:
+    ```bash
+    php artisan migrate
+    ```
+
+9. Finally, start the development server:
+    ```bash
+    php artisan serve
+    ```
+
+You're now ready to launch the Trivalia project!
+
