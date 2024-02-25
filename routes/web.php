@@ -48,6 +48,10 @@ Route::get('/', function () {
     return view('homepage');
 });
 
+Route::get('/album', function () {
+    return view('album');
+});
+
 Route::get('/subscription', function () {
     return view('subscription');
 });
