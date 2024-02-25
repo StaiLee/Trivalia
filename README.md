@@ -73,7 +73,7 @@ To get started with Trivalia, follow these steps:
 
 10. Run database migrations:
     ```bash
-    php artisan migrate
+    php artisan migrate --seed
     ```
 
 11. Finally, start the development server:
