@@ -65,6 +65,9 @@
                             <li class="text-muted">
                                 <p>Participation in excursions with the team of photographers</p>
                             </li>
+                            <li>
+                                <a href="{{ route('products.show', ['product' => 1]) }}">En savoir plus</a>
+                            </li>
                         </ul>
                         <a href="{{ route('stripe.checkout', ['product' => 1]) }}" class="btn btn-primary" style="margin-top:1rem;">Only 10$/month</a>
                     </div>
@@ -98,6 +101,9 @@
                             <li class="text-muted">
                                 <p>Participation in excursions with the team of photographers</p>
                             </li>
+                            <li>
+                                <a href="{{ route('products.show', ['product' => 2]) }}">En savoir plus</a>
+                            </li>
                         </ul>
                         <a href="{{ route('stripe.checkout', ['product' => 2]) }}" class="btn btn-primary" style="margin-top:1rem;">Only 25$/month</a>
                     </div>
@@ -130,6 +136,9 @@
                             </li>
                             <li class="text-decoration-underline">
                                 <p>Participation in excursions with the team of photographers</p>
+                            </li>
+                            <li>
+                                <a href="{{ route('products.show', ['product' => 3]) }}">En savoir plus</a>
                             </li>
                         </ul>
                         <a href="{{ route('stripe.checkout', ['product' => 3]) }}" class="btn btn-primary" style="margin-top:1rem;">Only 50$/month</a>
