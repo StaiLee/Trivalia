@@ -88,4 +88,5 @@ You're now ready to launch the Trivalia project!
 - StaiLee
 - Dre!C
 - Kaan
-
+- raphael
+- lucas
