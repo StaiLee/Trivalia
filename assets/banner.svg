@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" width="1200" height="260" font-family="'Georgia',serif">
+  <defs><linearGradient id="tg" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#e3b341"/><stop offset="100%" stop-color="#39c5d8"/></linearGradient>
+    <linearGradient id="bd" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#e3b341"/><stop offset="100%" stop-color="#39c5d8"/></linearGradient>
+  </defs>
+  <rect width="1200" height="260" rx="16" fill="#0e1418"/>
+  <rect x="1.5" y="1.5" width="1197" height="257" rx="15" fill="none" stroke="url(#bd)" stroke-width="2"/>
+  <circle cx="1090" cy="130" r="62" fill="none" stroke="#39c5d8" stroke-width="3"/><line x1="1090" y1="130" x2="1148" y2="130" stroke="#e3b341" stroke-width="6" opacity="0.85" transform="rotate(0 1090 130)"/><line x1="1090" y1="130" x2="1148" y2="130" stroke="#e3b341" stroke-width="6" opacity="0.85" transform="rotate(45 1090 130)"/><line x1="1090" y1="130" x2="1148" y2="130" stroke="#e3b341" stroke-width="6" opacity="0.85" transform="rotate(90 1090 130)"/><line x1="1090" y1="130" x2="1148" y2="130" stroke="#e3b341" stroke-width="6" opacity="0.85" transform="rotate(135 1090 130)"/><line x1="1090" y1="130" x2="1148" y2="130" stroke="#e3b341" stroke-width="6" opacity="0.85" transform="rotate(180 1090 130)"/><line x1="1090" y1="130" x2="1148" y2="130" stroke="#e3b341" stroke-width="6" opacity="0.85" transform="rotate(225 1090 130)"/><line x1="1090" y1="130" x2="1148" y2="130" stroke="#e3b341" stroke-width="6" opacity="0.85" transform="rotate(270 1090 130)"/><line x1="1090" y1="130" x2="1148" y2="130" stroke="#e3b341" stroke-width="6" opacity="0.85" transform="rotate(315 1090 130)"/><circle cx="1090" cy="130" r="14" fill="#0e1418"/><path d="M40 222 L160 150 L240 200 L360 130 L470 222 Z" fill="none" stroke="#39c5d8" stroke-width="2" opacity="0.35"/>
+  
+  <text x="82" y="140" font-size="58" font-weight="700" fill="url(#tg)" letter-spacing="1">TRIVALIA</text>
+  <text x="84" y="178" font-size="22" font-weight="600" fill="#f0e6cf">Travel Photography Store</text>
+  <text x="84" y="208" font-size="15" fill="#7ad6e0">&#8227; Laravel &#183; Stripe &#183; subscriptions &#183; custom shots</text>
+</svg>
