@@ -1,3 +1,13 @@
+<p align="center">
+  <img src="./assets/banner.svg" alt="Trivalia" width="100%"/>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/github/languages/top/StaiLee/Trivalia?style=for-the-badge&color=e3b341&logoColor=white" alt="badge"/>
+  <img src="https://img.shields.io/github/license/StaiLee/Trivalia?style=for-the-badge&color=684A95&label=LICENSE" alt="badge"/>
+  <img src="https://img.shields.io/github/stars/StaiLee/Trivalia?style=for-the-badge&logo=github&color=e3b341&label=STARS" alt="badge"/>
+</p>
+
 # Trivalia - e-commerce php project
 
 ![traivalia main](https://github.com/StaiLee/Trivalia/assets/102300908/ea941983-ca7f-4dda-90a9-4a160e6e7614)
